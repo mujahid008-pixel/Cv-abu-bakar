@@ -22,6 +22,7 @@ body {
     color: #fff;
     overflow: hidden;
     animation: fadeIn 2s ease-in-out;
+    
 }
 
 .header-title {
@@ -61,6 +62,86 @@ body {
     animation: bounce 1.5s infinite;
 }
 
+/* Styling for the hero section */
+.hero {
+    position: relative;
+    height: 100px;
+    background: linear-gradient(45deg, #4ffef5, #0026fe);
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+}
+
+/* Navbar container */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0;
+    background-color: linear-gradient(45deg, #4ffef5, #000b4a); /* Semi-transparent background */
+    border-bottom: 2px solid #fff;
+    z-index: 10;
+}
+
+/* Navbar list styling */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+/* Navbar list item styling */
+.nav li {
+    margin: 0 20px;
+}
+
+/* Navbar links styling */
+.nav a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on navbar links */
+.nav a:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px); /* Slight lifting effect */
+}
+
+/* Active state for navigation */
+.nav a.active {
+    background-color: #f39c12;
+    color: #fff;
+    transform: translateY(0); /* Active item does not lift */
+}
+
+/* Mobile-responsive navbar */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav li {
+        margin: 15px 0;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
 /* Blog Section dan Animasi Artikel */
 .blog {
     display: grid;
