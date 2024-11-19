@@ -8,7 +8,7 @@
 /* Style dasar */
 body {
     font-family: Arial, sans-serif;
-    background: hsl(252, 33%, 97%);
+    background: hsl(192, 33%, 97%);
     color: #333;
     overflow-x: hidden;
 }
@@ -74,20 +74,25 @@ body {
 
 /* Navbar container */
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
     padding: 40px 0;
-    background-color: linear-gradient(45deg, #4ffef5, #000b4a); /* Semi-transparent background */
+    background-color: #47afffe7;; /* Semi-transparent background */
     border-bottom: 2px solid #fff;
-    z-index: 10;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    justify-content: space-between;
+    
 }
 
 /* Navbar list styling */
 .nav ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
