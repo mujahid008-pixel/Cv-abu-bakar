@@ -80,7 +80,7 @@ body {
     transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: #47afffe7;; /* Semi-transparent background */
     border-bottom: 2px solid #fff;
     z-index: 1000;
